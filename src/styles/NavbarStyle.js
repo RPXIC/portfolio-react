@@ -5,9 +5,13 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: center;
     @media (min-width: 1025px) {
+        width: 7rem;
+        border-radius: 0 1rem 1rem 0;
+        background-color: #8080805c;
         flex-direction: column;
         position: fixed;
-        top: 11rem;
+        top: 25%;
+        left: 0;
     }
 `
 
@@ -20,6 +24,9 @@ export const Link = styled(NavLink)`
         margin-bottom: 1rem;
         font-size: 2.5rem;
     }
+    @media (min-width: 1025px) {
+        font-size: 2rem;
+    }
     &.current-page {
         border-top: 2px solid #ff6200;
         border-bottom: 2px solid #ff6200;
@@ -28,6 +35,9 @@ export const Link = styled(NavLink)`
         @media (max-width: 768px) {
             margin-bottom: 1rem;
             font-size: 3rem;
+        }
+        @media (min-width: 1025px) {
+            font-size: 3.2rem;
         }
     }
     &:hover {
