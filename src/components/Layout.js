@@ -11,7 +11,7 @@ const Layout = ({children}) => {
                 <Main>
                     {children}
                 </Main>
-                <Footer />
+                {/* <Footer /> */}
             </App>
         </>
     )

@@ -44,10 +44,14 @@ export const GlobalStyles = createGlobalStyle`
 
 export const App = styled.div`
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media (min-width: 1025px){
+        flex-direction: row;
+    }
 `
 
 export const Main = styled.main`

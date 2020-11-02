@@ -4,13 +4,18 @@ import { NavLink } from 'react-router-dom'
 export const Nav = styled.nav`
     display: flex;
     justify-content: center;
+    @media (min-width: 1025px) {
+        flex-direction: column;
+        position: fixed;
+        top: 11rem;
+    }
 `
 
 export const Link = styled(NavLink)`
     color: #11d7d8;
     margin: 1.3rem 2rem;
     padding: 1rem 0;
-    transition: color 1s;
+    transition: all 1s;
     @media (max-width: 768px) {
         margin-bottom: 1rem;
         font-size: 2.5rem;

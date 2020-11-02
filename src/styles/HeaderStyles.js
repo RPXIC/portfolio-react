@@ -9,6 +9,9 @@ export const Container = styled.header`
     position: sticky;
     background-color: black;
     width: 100%;
+    @media (min-width: 1025px) {
+        width: 10rem;
+    }
 `
 
 export const Content = styled.div`
@@ -18,6 +21,9 @@ export const Content = styled.div`
         display:flex;
         align-items: center;
         justify-content: space-between;    
+    }
+    @media (min-width: 1025px) {
+        flex-direction: column;
     }
 `
 
@@ -29,5 +35,8 @@ export const LogoText = styled.h1`
 
     @media (max-width: 768px) {
         margin: 0;
+    }
+    @media (min-width: 1025px) {
+        margin: .5rem 0 0 .5rem;
     }
 `
