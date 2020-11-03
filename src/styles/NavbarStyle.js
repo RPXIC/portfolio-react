@@ -10,7 +10,7 @@ export const Nav = styled.nav`
         background-color: #8080805c;
         flex-direction: column;
         position: fixed;
-        top: 25%;
+        top: 30%;
         left: 0;
     }
 `

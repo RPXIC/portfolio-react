@@ -4,7 +4,6 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import Home from './Home'
 import Projects from './Projects'
-import Contact from './Contact'
 import Project from './Project'
 import ProjectsList from './ProjectsList'
 
@@ -15,7 +14,6 @@ export {
     Footer,
     Home,
     Projects,
-    Contact,
     Project,
     ProjectsList
 }

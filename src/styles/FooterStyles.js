@@ -30,3 +30,13 @@ export const Link = styled.a`
         margin: 1rem 1rem;
     }
 `
+
+export const CVLink = styled.a`
+    color: white;
+    width: 3.5rem;
+    margin: 1rem 3rem 0;
+    @media (min-width: 1025px) {
+        height: 4.5rem;
+        margin: 1.2rem 1.7rem 2.2rem;
+    }
+`

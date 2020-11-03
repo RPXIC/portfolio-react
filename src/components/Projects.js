@@ -30,15 +30,16 @@ const PROJECTS_QUERY = `query {
 const Projects = () => {
     const { loading, error, data } = useQuery(PROJECTS_QUERY)
 
-    if (loading) return "Loading..."
-    if (error) return "Something Bad Happened"
+    if (loading) return null
 
     const { allProjects } = data
 
     return (
         <>
             <Title>Projects</Title>
-            <ProjectsList projects={allProjects} />
+            {!error && 
+                <ProjectsList projects={allProjects} />
+            }
         </>
     )
 }
