@@ -29,14 +29,14 @@ export const Content = styled.div`
 
 export const LogoText = styled.h1`
     text-align: center;
-    font-family: 'Metal Mania';
+    font-family: 'Mrs Saint Delafield';
     font-size: 5rem;
     margin: 2rem 0 1rem 3rem;
-
+    color: #11a011;
     @media (max-width: 768px) {
-        margin: 0;
+        margin: 1.5rem 0 0;
     }
     @media (min-width: 1025px) {
-        margin: .5rem 0 0 .5rem;
+        margin: 1.5rem 0 0 1.5rem;
     }
 `

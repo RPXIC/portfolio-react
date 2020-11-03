@@ -1,3 +1,5 @@
+import Home from './Home'
+import Eye from './Eye'
 import GitHub from './GitHub'
 import LinkedIn from './LinkedIn'
 import Mail from './Mail'
@@ -7,5 +9,7 @@ export {
     GitHub,
     LinkedIn,
     Mail,
-    Download
+    Download,
+    Home,
+    Eye
 }
