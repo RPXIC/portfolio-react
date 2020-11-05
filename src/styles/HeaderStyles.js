@@ -7,7 +7,7 @@ export const Logo = styled(Link)`
 
 export const Container = styled.header`
     position: sticky;
-    background-color: black;
+    background-color: #000000e8;
     width: 100%;
     @media (min-width: 1025px) {
         width: 10rem;
@@ -34,7 +34,7 @@ export const LogoText = styled.h1`
     margin: 2rem 0 1rem 3rem;
     color: #11a011;
     @media (max-width: 768px) {
-        margin: 1.5rem 0 0;
+        margin: 1.5rem 2.5rem 0 0;
     }
     @media (min-width: 1025px) {
         margin: 1.5rem 0 0 1.5rem;

@@ -59,5 +59,5 @@ export const Main = styled.main`
     flex-grow: 1;
     width: 100%;
     height: auto;
-    background-color: black;
+    background-color: #000000e8;
 `

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
-    background-color: black;
+    background-color: #000000e8;
     width: 100%;
     @media (min-width: 1025px) {
         width: 10rem;
