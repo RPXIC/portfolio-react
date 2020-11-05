@@ -6,6 +6,7 @@ export const GlobalStyles = createGlobalStyle`
         color: white;
         font-size: 62.5%;
         box-sizing: border-box;
+        font-family: 'Roboto Mono'
     }
     *, *:before, *:after {
         box-sizing: inherit;
