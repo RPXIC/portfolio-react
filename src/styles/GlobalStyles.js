@@ -14,6 +14,9 @@ export const GlobalStyles = createGlobalStyle`
     body {
         margin: 0;
         min-width: 300px;
+        background-image: radial-gradient(white 1px,transparent 1px), radial-gradient(white 1px,black 1px);
+        background-position: 0 0, 25px 25px;
+        background-size: 50px 50px;
     }
     h1, h2, h3 {
         margin: 0;

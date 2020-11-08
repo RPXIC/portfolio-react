@@ -6,6 +6,7 @@ import Home from './Home'
 import Projects from './Projects'
 import Project from './Project'
 import ProjectsList from './ProjectsList'
+import Stacks from './Stacks'
 
 export {
     Layout,
@@ -15,5 +16,6 @@ export {
     Home,
     Projects,
     Project,
-    ProjectsList
+    ProjectsList,
+    Stacks
 }

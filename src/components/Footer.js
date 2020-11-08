@@ -14,7 +14,7 @@ const DOCS_QUERY = `query {
 const Footer = () => {
     const { loading, error, data } = useQuery(DOCS_QUERY)
 
-    if (loading) return null
+    if (loading) return <FooterContainer></FooterContainer>
 
     const { cv: { url } } = data.allDocs[0]
 

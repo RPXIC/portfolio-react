@@ -7,7 +7,7 @@ export const Logo = styled(Link)`
 
 export const Container = styled.header`
     position: sticky;
-    background-color: #000000e8;
+    background-color: #000000e6;
     width: 100%;
     @media (min-width: 1025px) {
         width: 10rem;
@@ -22,7 +22,7 @@ export const Content = styled.div`
         align-items: center;
         justify-content: space-between;    
     }
-    @media (min-width: 1025px) {
+    @media (min-width: 1024px) {
         flex-direction: column;
     }
 `
@@ -36,7 +36,7 @@ export const LogoText = styled.h1`
     @media (max-width: 768px) {
         margin: 1.5rem 2.5rem 0 0;
     }
-    @media (min-width: 1025px) {
+    @media (min-width: 1024px) {
         margin: 1.5rem 0 0 1.5rem;
     }
 `

@@ -3,25 +3,65 @@ import styled from 'styled-components'
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    min-height: 73vh;
+    @media (min-width: 768px) {
+        min-height: 82vh;
+    }
+    @media (min-width: 1024px) {
+        justify-content: space-between;
+        min-height: 100vh;
+    }
+`
+
+export const Content = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
 `
 
 export const Title = styled.h1`
     text-align: center;
     font-size: 4rem;
+    @media (max-width: 450px) {
+        font-size: 3rem;
+    }
+    @media (min-width: 1025px) {
+        margin: 2rem 0 10rem;
+    }
 `
 
-export const SubTitle = styled.h2`
+export const Text = styled.h3`
     text-align: center;
-`
-
-export const Advice = styled.h2`
+    width: 80%;
     text-align: center;
-    color: yellow;
+    margin: 1rem auto;
+    letter-spacing: .3rem;
+    line-height: 2.5;
+    @media (max-width: 450px) {
+        letter-spacing: .1rem;
+        line-height: 1.1;
+        width: 90%;
+        margin: 0 auto 1rem;
+    }
+    @media (min-width: 450px) and (max-width: 640px){
+        letter-spacing: .1rem;
+        line-height: 1.7;
+        width: 90%;
+        margin: 0 auto 1rem;
+    }
+    @media (min-width: 1025px) {
+        width: 70%;
+    }
 `
 
 export const Name = styled.span`
     font-family: 'Qwigley';
     font-size: 7rem;
+    @media (max-width: 450px) {
+        font-size: 5rem;
+    }
 `
 
 export const Welcome = styled.div`
@@ -101,4 +141,9 @@ export const W5 = styled.div`
             color: white;
         }
     }
+`
+
+export const IconContainer = styled.div`
+    width: 3rem;
+    height: 3rem;
 `

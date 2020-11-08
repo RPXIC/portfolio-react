@@ -18,6 +18,7 @@ export const ListFlex = styled.li`
 
 export const Description = styled.p`
     text-align: center;
+    height: 3.5rem;
 `
 
 export const Stack = styled.p`
