@@ -7,6 +7,7 @@ import Projects from './Projects'
 import Project from './Project'
 import ProjectsList from './ProjectsList'
 import Stacks from './Stacks'
+import Seo from './Seo'
 
 export {
     Layout,
@@ -17,5 +18,6 @@ export {
     Projects,
     Project,
     ProjectsList,
-    Stacks
+    Stacks,
+    Seo
 }

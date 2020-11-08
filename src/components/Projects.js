@@ -1,41 +1,21 @@
 import React from "react"
-import { ProjectsList } from 'components'
-import { Title } from 'styles/ProjectsStyles'
+import { Helmet } from 'react-helmet'
 import { useQuery } from 'graphql-hooks'
-
-const PROJECTS_QUERY = `query {
-	allProjects {
-        id
-        title
-        description
-        stack
-        website
-        image {
-            responsiveImage(imgixParams: { fit: crop, w: 257, h: 460, auto: format }){
-              srcSet
-              webpSrcSet
-              sizes
-              src
-              width
-              height
-              aspectRatio
-              alt
-              title
-              base64
-            }
-        }
-    }
-}`
+import { ProjectsList, Seo } from 'components'
+import { Title } from 'styles/ProjectsStyles'
+import { PROJECTS_QUERY } from 'queries/queries'
 
 const Projects = () => {
     const { loading, error, data } = useQuery(PROJECTS_QUERY)
 
-    if (loading) return null
+    if (loading) return <Helmet><title>Loading...</title></Helmet>
 
     const { allProjects } = data
 
     return (
         <>
+            <Seo />
+
             <Title>Projects</Title>
             {!error && 
                 <ProjectsList projects={allProjects} />
