@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from 'react-helmet'
 import { useQuery } from 'graphql-hooks'
-import { ProjectsList, Seo } from 'components'
+import { ProjectsList } from 'components'
 import { Title } from 'styles/ProjectsStyles'
 import { PROJECTS_QUERY } from 'queries/queries'
 
@@ -14,8 +14,6 @@ const Projects = () => {
 
     return (
         <>
-            <Seo />
-
             <Title>Projects</Title>
             {!error && 
                 <ProjectsList projects={allProjects} />

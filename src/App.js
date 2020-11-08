@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { Layout, Home, Projects } from './components'
+import { Layout, Home, Projects, Seo } from './components'
 
 const App = () => (
   <Router>
+      <Seo />
       <Layout>
         <Switch>
           <Route exact path="/" component={Home}/>

@@ -1,11 +1,10 @@
 import React from "react"
-import { Stacks, Seo } from 'components'
+import { Stacks } from 'components'
 import { Container, Content, Title, Text, Name, Welcome, W1, W2, W3, W4, W5 } from 'styles/HomeStyles'
 
 const Home = () => {
     return (
         <>
-            <Seo />
             <Container>
                 <Content>
                     <Welcome>
