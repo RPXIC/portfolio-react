@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <Container>
             <Content>
-                <Logo to='/'><LogoText>RP</LogoText></Logo>
+                <Logo to='/'><LogoText data-cy="logo">RP</LogoText></Logo>
                 <Navbar />
             </Content>
         </Container>

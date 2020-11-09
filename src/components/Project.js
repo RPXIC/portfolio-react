@@ -5,13 +5,13 @@ const Project = ({ project }) => {
     const { title, description, stack, website, image: { responsiveImage } } = project
 
     return (
-        <ListFlex>
-            <Title>{title}</Title>
-            <Description>{description}</Description>
-            <a href={website} target="_blank" rel="noreferrer">
+        <ListFlex data-cy="project-container">
+            <Title data-cy="project-title">{title}</Title>
+            <Description data-cy="project-description">{description}</Description>
+            <a href={website} target="_blank" rel="noreferrer" data-cy="project-link">
                 <ImageDato data={responsiveImage} />
             </a>
-            <Stack>{stack}</Stack>
+            <Stack data-cy="project-stack">{stack}</Stack>
         </ListFlex>
     )
 }

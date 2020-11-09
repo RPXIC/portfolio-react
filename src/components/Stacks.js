@@ -4,7 +4,7 @@ import { StacksContainer, IconS, IconM, IconXL } from 'styles/StacksStyles'
 
 const Stacks = () => {
     return (
-        <StacksContainer>
+        <StacksContainer data-cy="stacks">
             <IconS>
                 <Html />
             </IconS>

@@ -7,7 +7,7 @@ const ProjectsList = ({ projects }) => {
     if (projects.length === 0) return <p>No projects</p>
 
     return (
-        <Container>
+        <Container data-cy="projects-list">
             { projects.map(project => (
                 <Project 
                     key={project.id}

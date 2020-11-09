@@ -20,17 +20,17 @@ const Footer = () => {
 
     return (
         <FooterContainer>
-            <Nav>
-                <Link href="https://github.com/RPXIC" target="_blank" rel="noreferrer" title="GitHub">
+            <Nav data-cy="navbar-footer">
+                <Link href="https://github.com/RPXIC" target="_blank" rel="noreferrer" title="GitHub" data-cy="link-github">
                     <GitHub />
                 </Link>
-                <Link href="https://www.linkedin.com/in/ruben-ponce-ca%C3%B1adas/" target="_blank" rel="noreferrer" title="LinkedIn">
+                <Link href="https://www.linkedin.com/in/ruben-ponce-ca%C3%B1adas/" target="_blank" rel="noreferrer" title="LinkedIn" data-cy="link-linkedin">
                     <LinkedIn />
                 </Link>
-                <Link href="mailto:rpc2works@gmail.com" target="_blank" rel="noreferrer" title="Mail">
+                <Link href="mailto:rpc2works@gmail.com" target="_blank" rel="noreferrer" title="Mail" data-cy="link-mail">
                     <Mail />
                 </Link>
-                {!error && <CVLink href={url} target="_blank" rel="noreferrer" title="CV">
+                {!error && <CVLink href={url} target="_blank" rel="noreferrer" title="CV" data-cy="link-cv">
                     <Download />
                 </CVLink>}
             </Nav>

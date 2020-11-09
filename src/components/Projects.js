@@ -14,7 +14,7 @@ const Projects = () => {
 
     return (
         <>
-            <Title>Projects</Title>
+            <Title data-cy="title">Projects</Title>
             {!error && 
                 <ProjectsList projects={allProjects} />
             }

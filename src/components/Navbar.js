@@ -4,9 +4,9 @@ import { Nav, Link } from 'styles/NavbarStyle'
 
 const Navbar = () => {
     return (
-        <Nav>
-            <Link exact to={'/'} activeClassName="current-page" title="About"><Home /></Link>
-            <Link to={'/projects'} activeClassName="current-page" title="Projects"><Eye /></Link>
+        <Nav data-cy="navbar">
+            <Link exact to={'/'} activeClassName="current-page" title="About" data-cy="link-home"><Home /></Link>
+            <Link to={'/projects'} activeClassName="current-page" title="Projects" data-cy="link-projects"><Eye /></Link>
         </Nav>
     )
 }

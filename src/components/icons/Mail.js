@@ -2,7 +2,7 @@ import * as React from "react"
 
 const Mail = (props) => {
   return (
-    <svg viewBox="1 1 600 600" style={{width:'5rem'}} {...props}>
+    <svg viewBox="1 1 600 600" style={{width:'4.5rem'}} {...props}>
       <g transform="translate(-5.667 -6408.081) scale(6.66667)">
         <linearGradient
           id="prefix__a"
