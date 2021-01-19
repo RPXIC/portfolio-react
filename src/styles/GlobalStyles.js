@@ -1,9 +1,9 @@
-import styled from "styled-components"
-import { createGlobalStyle } from "styled-components"
+import styled from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
+import img from 'img/img.jpg'
 
 export const GlobalStyles = createGlobalStyle`
     html {
-        color: white;
         font-size: 62.5%;
         box-sizing: border-box;
         font-family: 'Roboto Mono'
@@ -12,11 +12,10 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: inherit;
     }
     body {
+        backdrop-filter: invert(30%);
+        background: white url(${img}) center/cover no-repeat fixed;
         margin: 0;
         min-width: 300px;
-        background-image: radial-gradient(white 1px,transparent 1px), radial-gradient(white 1px,black 1px);
-        background-position: 0 0, 25px 25px;
-        background-size: 50px 50px;
     }
     h1, h2, h3 {
         margin: 0;
@@ -47,20 +46,20 @@ export const GlobalStyles = createGlobalStyle`
 `
 
 export const App = styled.div`
-    width: 100%;
-    min-height: 100vh;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    @media (min-width: 1025px){
-        flex-direction: row;
-    }
+	width: 100%;
+	min-width: 380px;
+	min-height: 100vh;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@media (min-width: 1025px) {
+		flex-direction: row;
+	}
 `
 
 export const Main = styled.main`
-    flex-grow: 1;
-    width: 100%;
-    height: auto;
-    background-color: #000000e8;
+	flex-grow: 1;
+	width: 100%;
+	height: auto;
 `

@@ -1,25 +1,22 @@
-import React from "react"
+import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useQuery } from 'graphql-hooks'
 import { ProjectsList } from 'components'
-import { Title } from 'styles/ProjectsStyles'
 import { PROJECTS_QUERY } from 'queries/queries'
 
 const Projects = () => {
-    const { loading, error, data } = useQuery(PROJECTS_QUERY)
+	const { loading, error, data } = useQuery(PROJECTS_QUERY)
 
-    if (loading) return <Helmet><title>Loading...</title></Helmet>
+	if (loading)
+		return (
+			<Helmet>
+				<title>Loading...</title>
+			</Helmet>
+		)
 
-    const { allProjects } = data
+	const { allProjects } = data
 
-    return (
-        <>
-            <Title data-cy="title">Projects</Title>
-            {!error && 
-                <ProjectsList projects={allProjects} />
-            }
-        </>
-    )
+	return !error ? <ProjectsList projects={allProjects} /> : <></>
 }
 
 export default Projects

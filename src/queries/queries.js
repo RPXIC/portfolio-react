@@ -1,5 +1,5 @@
 export const PROJECTS_QUERY = `query {
-	allProjects {
+	  allProjects {
         id
         title
         description
@@ -20,6 +20,14 @@ export const PROJECTS_QUERY = `query {
             }
         }
     }
+}`
+
+export const DOCS_QUERY = `query {
+  allDocs {
+    cv {
+      url
+    }
+  }
 }`
 
 export const SEO_QUERY = `query {

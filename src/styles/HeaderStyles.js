@@ -1,42 +1,43 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
-
-export const Logo = styled(Link)`
-    color: white;
-`
 
 export const Container = styled.header`
-    position: sticky;
-    background-color: #000000e6;
-    width: 100%;
-    @media (min-width: 1025px) {
-        width: 10rem;
-    }
+	display: flex;
+	flex: 1;
+	@media (min-width: 1025px) {
+		flex-direction: column;
+		align-items: start;
+	}
 `
 
 export const Content = styled.div`
-    margin: 0 auto;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	margin: 0 auto;
 
-    @media (min-width: 768px) {
-        display:flex;
-        align-items: center;
-        justify-content: space-between;    
-    }
-    @media (min-width: 1024px) {
-        flex-direction: column;
-    }
+	@media (min-width: 768px) {
+		align-items: center;
+		justify-content: space-between;
+	}
+	@media (min-width: 1024px) {
+		align-items: start;
+	}
 `
 
-export const LogoText = styled.h1`
-    text-align: center;
-    font-family: 'Mrs Saint Delafield';
-    font-size: 5rem;
-    margin: 2rem 0 1rem 3rem;
-    color: #11a011;
-    @media (max-width: 768px) {
-        margin: 1.5rem 2.5rem 0 0;
-    }
-    @media (min-width: 1024px) {
-        margin: 1.5rem 0 0 1.5rem;
-    }
+export const Path = styled.div`
+	color: black;
+	margin-left: 2rem;
+	@media (min-width: 1025px) {
+		margin-left: 0;
+	}
+`
+
+export const PathText = styled.h1`
+	text-align: center;
+	font-size: 2.3rem;
+	margin: 1.5rem;
+`
+
+export const NavContainer = styled.div`
+	flex: 1;
 `
