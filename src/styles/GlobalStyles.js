@@ -12,7 +12,6 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: inherit;
     }
     body {
-        backdrop-filter: invert(30%);
         background: white url(${img}) center/cover no-repeat fixed;
         margin: 0;
         min-width: 300px;
@@ -46,20 +45,20 @@ export const GlobalStyles = createGlobalStyle`
 `
 
 export const App = styled.div`
-	width: 100%;
-	min-width: 380px;
-	min-height: 100vh;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	@media (min-width: 1025px) {
-		flex-direction: row;
-	}
+  width: 100%;
+  min-width: 380px;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (min-width: 1025px) {
+    flex-direction: row;
+  }
 `
 
 export const Main = styled.main`
-	flex-grow: 1;
-	width: 100%;
-	height: auto;
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
 `
