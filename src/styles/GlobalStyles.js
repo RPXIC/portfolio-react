@@ -45,6 +45,7 @@ export const GlobalStyles = createGlobalStyle`
 `
 
 export const App = styled.div`
+  background-color: #ffffff4a;
   width: 100%;
   min-width: 380px;
   min-height: 100vh;
